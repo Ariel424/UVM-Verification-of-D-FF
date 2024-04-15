@@ -60,8 +60,9 @@ class rst_dff extends uvm_sequence#(transaction);
     repeat (15)
       begin 
         tr = transaction::type_id::create ("tr); 
-        start_item(tr); 
+        start_item(tr);
+        assert (tr.randomize()); 
+        tr.rst = 1'b1;
+                                   
+                                          
                                            
-                                           
-                                        
-  
