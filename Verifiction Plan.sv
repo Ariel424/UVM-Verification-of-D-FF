@@ -63,6 +63,7 @@ class rst_dff extends uvm_sequence#(transaction);
         start_item(tr);
         assert (tr.randomize()); 
         tr.rst = 1'b1;
-                                   
-                                          
+          `uvm_info("SEQ", $sformatf("rst : %0b  din : %0b  dout : %0b", tr.rst, tr.din, tr.dout), UVM_NONE);
+          finish_item(tr)
+                                           
                                            
