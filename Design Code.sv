@@ -10,7 +10,7 @@ module Dff (
       if (rst)
         dout <= 1'b0;
       else
-        dout <= din; 
+        dout <= din;
     end 
 endmodule 
 
